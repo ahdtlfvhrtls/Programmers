@@ -5,4 +5,3 @@ def solution(num_list):
             return index
     else:
         return -1
-            
