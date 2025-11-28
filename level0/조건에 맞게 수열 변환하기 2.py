@@ -6,3 +6,8 @@ def solution(arr):
             if i >= 50 and i % 2 == 0:
                 arrx.append(i//2)
             elif i < 50 and i % 2 != 0:
+                arrx.append(i*2+1)
+            else:
+                arrx.append(i)
+
+        if arr == arrx:
