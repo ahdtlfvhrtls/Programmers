@@ -11,3 +11,7 @@ def solution(arr):
                 arrx.append(i)
 
         if arr == arrx:
+            return x
+        else:
+            arr = arrx
+            x += 1
