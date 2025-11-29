@@ -5,3 +5,5 @@ def solution(arr, k):
             arr[i] = arr[i] * k
     else:
         for j in range(len_arr):
+            arr[j] = arr[j] + k
+    return arr
