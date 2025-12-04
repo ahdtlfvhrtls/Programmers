@@ -3,3 +3,4 @@ def solution(myString):
     for i in myString:
         i = i.lower()
         answer += i
+    return answer
