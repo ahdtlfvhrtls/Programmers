@@ -10,3 +10,4 @@ total_user = target['total_user_combined'].sum()
 total_ads = target['total_ads_combined'].sum()
 ratio = total_ads / total_user
 
+print(ratio)
