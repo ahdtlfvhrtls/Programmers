@@ -1,11 +1,4 @@
 import pandas as pd
 
 df = pd.read_csv('D:/프로그래머스/videos.csv')
-max_duration = df['duration'].max()
-
-longest_videos = df[df['duration'] == max_duration]
-
-print("최대 duration:", max_duration)
-print("해당 duration 영상 개수:", len(longest_videos))
-print(longest_videos)
-
+df['total_user_combined'] = df['total_user_time_spent_in_mins'] + df['user_time_spent_versionB_in_mins']
