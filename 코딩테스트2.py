@@ -5,3 +5,4 @@ df_valid = df[df['date'] != '-'].copy()
 df_valid['date'] = pd.to_datetime(df_valid['date'])
 
 daily = df_valid.groupby('date').agg(
+    
