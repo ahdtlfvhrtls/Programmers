@@ -10,3 +10,4 @@ daily = df_valid.groupby('date').agg(
     time_A=('total_user_time_spent_in_mins','sum'),
     time_B=('user_time_spent_versionB_in_mins','sum')
 )
+
