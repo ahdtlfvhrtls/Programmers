@@ -11,3 +11,4 @@ daily = df_valid.groupby('date').agg(
     time_B=('user_time_spent_versionB_in_mins','sum')
 )
 
+daily['ratio_A'] = daily['clicks_A'] / daily['time_A']
