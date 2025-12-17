@@ -16,3 +16,4 @@ daily['ratio_B'] = daily['clicks_B'] / daily['time_B']
 
 daily_compare = daily[daily['ratio_A'] > daily['ratio_B']]
 
+print("A 비율이 더 높은 날짜 수:", len(daily_compare))
