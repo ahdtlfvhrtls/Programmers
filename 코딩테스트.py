@@ -8,4 +8,3 @@ df_valid['total_clicks_combined'] = df_valid['ads_clicked'] + df_valid['ads_clic
 
 grouped_clicks = df_valid.groupby('date').agg(
     total_clicks=('total_clicks_combined','sum')
-    
