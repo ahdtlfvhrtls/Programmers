@@ -12,3 +12,4 @@ grouped_clicks = df_valid.groupby('date').agg(
 
 grouped_clicks_sorted = grouped_clicks.sort_values('total_clicks')
 
+print(grouped_clicks_sorted.head())
