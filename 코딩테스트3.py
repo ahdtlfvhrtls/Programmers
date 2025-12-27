@@ -11,4 +11,3 @@ df_valid['ads_watched_combined'] = (
 df_valid['clicks_combined'] = (
     df_valid['ads_clicked'] +
     df_valid['ads_clicked_versionB']
-    
