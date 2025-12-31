@@ -20,3 +20,4 @@ grouped = df_valid.groupby('date').agg(
 
 grouped = grouped[grouped['total_ads_watched'] > 0].copy()
 result = grouped.sort_values('click_ratio')
+print(result.head(1))
