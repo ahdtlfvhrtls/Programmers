@@ -6,3 +6,4 @@ df_valid = df[df['date'] != '-'].copy()
 
 df_valid['ads_watched_combined'] = (
     df_valid['total_ads_watched_in_mins'] +
+    
