@@ -9,3 +9,4 @@ df_valid['ads_watched_combined'] = (
     df_valid['ads_watched_vesionB_in_mins']
 )
 
+grouped = df_valid.groupby('date').agg(
