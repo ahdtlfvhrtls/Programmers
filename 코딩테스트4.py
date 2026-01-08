@@ -18,3 +18,4 @@ grouped = df_valid.groupby('date').agg(
     total_clicks=('clicks_combined', 'sum')
 )
 
+grouped = grouped[grouped['total_ads_watched'] > 0].copy()
