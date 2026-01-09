@@ -22,3 +22,4 @@ grouped = grouped[grouped['total_ads_watched'] > 0].copy()
 
 grouped['click_ratio'] = grouped['total_clicks'] / grouped['total_ads_watched']
 
+result = grouped.sort_values('click_ratio')
