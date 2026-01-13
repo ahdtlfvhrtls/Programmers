@@ -8,3 +8,4 @@ grouped_slot = df_valid.groupby('time_slot').agg(
     total_time_A=('total_user_time_spent_in_mins', 'sum'),
     total_time_B=('user_time_spent_versionB_in_mins', 'sum')
 )
+
