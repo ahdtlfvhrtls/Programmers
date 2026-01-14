@@ -9,3 +9,4 @@ grouped_slot = df_valid.groupby('time_slot').agg(
     total_time_B=('user_time_spent_versionB_in_mins', 'sum')
 )
 
+less_B_than_A = grouped_slot[grouped_slot['total_time_B'] < grouped_slot['total_time_A']]
