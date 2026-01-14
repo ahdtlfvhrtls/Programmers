@@ -10,3 +10,4 @@ grouped_slot = df_valid.groupby('time_slot').agg(
 )
 
 less_B_than_A = grouped_slot[grouped_slot['total_time_B'] < grouped_slot['total_time_A']]
+
