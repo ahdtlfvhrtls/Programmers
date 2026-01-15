@@ -13,3 +13,4 @@ less_B_than_A = grouped_slot[grouped_slot['total_time_B'] < grouped_slot['total_
 
 print(grouped_slot)
 print("\nB가 A보다 적은 시간대:")
+print(less_B_than_A)
