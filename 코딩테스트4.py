@@ -24,3 +24,4 @@ grouped['click_ratio'] = grouped['total_clicks'] / grouped['total_ads_watched']
 
 result = grouped.sort_values('click_ratio')
 print(result.head())
+print("가장 낮은 날:", result.index[0])
