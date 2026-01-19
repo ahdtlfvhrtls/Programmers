@@ -12,3 +12,4 @@ df_valid['date'] = pd.to_datetime(df_valid['date'])
 df_valid['clicks_A'] = df_valid['ads_clicked']
 df_valid['clicks_B'] = df_valid['ads_clicked_versionB']
 
+# Extract week (ISO)
