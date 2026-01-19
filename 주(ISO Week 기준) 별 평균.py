@@ -9,3 +9,4 @@ df_valid = df[df['date'] != '-'].copy()
 df_valid['date'] = pd.to_datetime(df_valid['date'])
 
 # 행렬 조합
+df_valid['clicks_A'] = df_valid['ads_clicked']
