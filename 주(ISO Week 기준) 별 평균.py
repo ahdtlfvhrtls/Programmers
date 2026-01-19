@@ -11,3 +11,4 @@ df_valid['date'] = pd.to_datetime(df_valid['date'])
 # 행렬 조합
 df_valid['clicks_A'] = df_valid['ads_clicked']
 df_valid['clicks_B'] = df_valid['ads_clicked_versionB']
+
