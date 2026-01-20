@@ -15,4 +15,4 @@ df_valid['clicks_B'] = df_valid['ads_clicked_versionB']
 # 주단위 추출
 df_valid['week'] = df_valid['date'].dt.isocalendar().week
 
-# Weekly group averages
+# 주별 평균
