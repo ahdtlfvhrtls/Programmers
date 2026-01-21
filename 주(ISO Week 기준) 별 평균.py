@@ -16,4 +16,4 @@ df_valid['clicks_B'] = df_valid['ads_clicked_versionB']
 df_valid['week'] = df_valid['date'].dt.isocalendar().week
 
 # 주별 평균
-df_valid['week'] = df_valid['date'].dt.isocalendar().week
+weekly_group = df_valid.groupby('week').agg(
