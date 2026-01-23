@@ -20,3 +20,4 @@ weekly_group = df_valid.groupby('week').agg(
     avg_clicks_A=('clicks_A', 'mean'),
     avg_clicks_B=('clicks_B', 'mean')
 )
+
