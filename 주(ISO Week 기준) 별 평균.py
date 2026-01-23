@@ -21,3 +21,4 @@ weekly_group = df_valid.groupby('week').agg(
     avg_clicks_B=('clicks_B', 'mean')
 )
 
+# Filter A > B
