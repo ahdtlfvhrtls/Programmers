@@ -25,3 +25,4 @@ weekly_group = df_valid.groupby('week').agg(
 weekly_compare = weekly_group[weekly_group['avg_clicks_A'] > weekly_group['avg_clicks_B']]
 
 print(weekly_group)
+print("A > B Condition weeks:")
