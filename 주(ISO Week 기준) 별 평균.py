@@ -27,3 +27,4 @@ weekly_compare = weekly_group[weekly_group['avg_clicks_A'] > weekly_group['avg_c
 print(weekly_group)
 print("A > B Condition weeks:")
 print(weekly_compare)
+print("Number of weeks:", len(weekly_compare))
