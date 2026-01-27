@@ -19,7 +19,7 @@ daily_compare = daily[daily['ratio_A'] > daily['ratio_B']]
 df['total_user_combined'] = df['total_user_time_spent_in_mins'] + df['user_time_spent_versionB_in_mins']
 df['total_ads_combined'] = df['total_ads_watched_in_mins'] + df['ads_watched_vesionB_in_mins']
 
-
+target = df[df['time_slot'].isin(['06:00-11:59','12:00-17:59'])]
 
 print("A 비율이 더 높은 날짜 수:", len(daily_compare))
 print("전체 날짜 수:", len(daily))
