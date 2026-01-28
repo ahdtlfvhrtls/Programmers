@@ -21,7 +21,7 @@ df['total_ads_combined'] = df['total_ads_watched_in_mins'] + df['ads_watched_ves
 
 target = df[df['time_slot'].isin(['06:00-11:59','12:00-17:59'])]
 
-
+total_user = target['total_user_combined'].sum()
 
 print("A 비율이 더 높은 날짜 수:", len(daily_compare))
 print("전체 날짜 수:", len(daily))
