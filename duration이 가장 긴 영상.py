@@ -10,3 +10,4 @@ max_duration = df['duration'].max()
 longest_videos = df[df['duration'] == max_duration]
 
 print("최대 duration:", max_duration)
+print("해당 duration 영상 개수:", len(longest_videos))
