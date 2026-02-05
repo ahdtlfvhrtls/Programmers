@@ -5,7 +5,7 @@ df = pd.read_csv('D:/프로그래머스/videos.csv')
 # 날짜 컬럼에서 - 제거
 df_valid = df[df['date'] != '-'].copy()
 
-# Sum A + B ad clicks
+# 광고 클릭 합산 A + B 
 df_valid['total_clicks_combined'] = df_valid['ads_clicked'] + df_valid['ads_clicked_versionB']
 
 grouped_clicks = df_valid.groupby('date').agg(
