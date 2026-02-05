@@ -8,6 +8,7 @@ df_valid = df[df['date'] != '-'].copy()
 # 광고 클릭 합산 A + B 
 df_valid['total_clicks_combined'] = df_valid['ads_clicked'] + df_valid['ads_clicked_versionB']
 
+
 grouped_clicks = df_valid.groupby('date').agg(
     total_clicks=('total_clicks_combined','sum')
 )
