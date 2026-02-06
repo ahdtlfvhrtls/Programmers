@@ -13,7 +13,7 @@ grouped_clicks = df_valid.groupby('date').agg(
     total_clicks=('total_clicks_combined','sum')
 )
 
-# Sort by least clicks
+# 최근 클릭 수 필터
 grouped_clicks_sorted = grouped_clicks.sort_values('total_clicks')
 
 print(grouped_clicks_sorted.head())
