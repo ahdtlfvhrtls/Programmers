@@ -3,7 +3,7 @@ import pandas as pd
 # CSV 읽기
 df = pd.read_csv('D:/프로그래머스/videos.csv')
 
-# 날짜가 '-'인 행 제거
+# 날짜가 -인 행 제거
 df_valid = df[df['date'] != '-'].copy()
 df_valid['date'] = pd.to_datetime(df_valid['date'])
 
