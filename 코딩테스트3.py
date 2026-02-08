@@ -1,6 +1,6 @@
 import pandas as pd
 
-
+# CSV 읽기
 df = pd.read_csv('data2.csv')
 
 df_valid = df[df['date'] != '-'].copy()
