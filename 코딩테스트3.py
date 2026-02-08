@@ -3,7 +3,7 @@ import pandas as pd
 # CSV 읽기
 df = pd.read_csv('data2.csv')
 
-
+# 날짜가 '-'인 행 제거
 df_valid = df[df['date'] != '-'].copy()
 
 df_valid['ads_watched_combined'] = (
