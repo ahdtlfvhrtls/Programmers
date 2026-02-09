@@ -26,5 +26,6 @@ grouped = df_valid.groupby('date').agg(
 grouped = grouped[grouped['total_ads_watched'] > 0].copy()
 
 # 클릭 비율 계산
+
 result = grouped.sort_values('click_ratio')
 print(result.head(1))
