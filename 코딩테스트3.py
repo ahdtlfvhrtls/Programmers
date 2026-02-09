@@ -24,5 +24,6 @@ grouped = df_valid.groupby('date').agg(
 
 # 광고 시청 시간이 0인 날은 나누기 에러 방지를 위해 제외
 grouped = grouped[grouped['total_ads_watched'] > 0].copy()
+
 result = grouped.sort_values('click_ratio')
 print(result.head(1))
