@@ -16,6 +16,7 @@ df_valid['clicks_combined'] = (
     df_valid['ads_clicked_versionB']
 )
 
+
 grouped = df_valid.groupby('date').agg(
     total_ads_watched=('ads_watched_combined', 'sum'),
     total_clicks=('clicks_combined', 'sum')
