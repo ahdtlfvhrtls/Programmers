@@ -30,5 +30,5 @@ grouped['click_ratio'] = grouped['total_clicks'] / grouped['total_ads_watched']
 
 # 클릭 비율이 가장 낮은 날짜 찾기
 result = grouped.sort_values('click_ratio')
-print(result.head())
+print(result.head()) # 비율 낮은 순으로 상위 몇 개 보기
 print(result.head(1))
