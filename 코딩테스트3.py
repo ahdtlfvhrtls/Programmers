@@ -33,3 +33,4 @@ result = grouped.sort_values('click_ratio')
 print(result.head()) # 비율 낮은 순으로 상위 몇 개 보기
 print(result.head(1))
 print("가장 낮은 날:", result.index[0])
+print("해당 날 클릭 비율:", result.iloc[0]['click_ratio'])
