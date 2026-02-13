@@ -18,11 +18,4 @@ grouped = df_valid.groupby('date').agg(
     total_clicks=('clicks_combined', 'sum')
 )
 
-grouped = grouped[grouped['total_ads_watched'] > 0].copy()
-
 grouped['click_ratio'] = grouped['total_clicks'] / grouped['total_ads_watched']
-
-result = grouped.sort_values('click_ratio')
-print(result.head())
-print("가장 낮은 날:", result.index[0])
-print("해당 날 클릭 비율:", result.iloc[0]['click_ratio'])
