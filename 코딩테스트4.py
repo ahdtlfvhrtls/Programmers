@@ -19,3 +19,4 @@ grouped = df_valid.groupby('date').agg(
 )
 
 grouped['click_ratio'] = grouped['total_clicks'] / grouped['total_ads_watched']
+
