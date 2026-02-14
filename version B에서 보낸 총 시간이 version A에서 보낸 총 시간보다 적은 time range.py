@@ -2,7 +2,7 @@ import pandas as pd
 
 df = pd.read_csv('D:/프로그래머스/videos.csv')
 
-
+# 날짜가 있는 행만 사용
 df_valid = df[df['date'] != '-'].copy()
 
 grouped_slot = df_valid.groupby('time_slot').agg(
