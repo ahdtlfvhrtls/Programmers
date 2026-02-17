@@ -28,6 +28,5 @@ total_user = target['total_user_combined'].sum()
 total_ads = target['total_ads_combined'].sum()
 ratio = total_ads / total_user
 
-
 print("A 비율이 더 높은 날짜 수:", len(daily_compare))
 print("전체 날짜 수:", len(daily))
