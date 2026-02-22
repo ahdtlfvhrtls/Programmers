@@ -12,3 +12,4 @@ answer = grouped.sum()
 answer
 
 df2 = df.dropna()
+
