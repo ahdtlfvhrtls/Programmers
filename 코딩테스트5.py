@@ -9,5 +9,5 @@ grouped = df.groupby('website')['contact_mail'].apply(
 
 # True인 website 개수
 answer = grouped.sum()
-
+answer
 df2 = df.dropna()
