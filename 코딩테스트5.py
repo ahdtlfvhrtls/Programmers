@@ -14,6 +14,7 @@ answer
 df[df['contact_mail'].notna()] \
 .groupby('contact_mail') \
 
+
 df2 = df.dropna()
 df2['contact_mail'].isna().sum()
 df2['website'].isna().sum()
