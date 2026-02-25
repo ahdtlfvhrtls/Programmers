@@ -14,7 +14,7 @@ answer
 df[df['contact_mail'].notna()] \
 .groupby('contact_mail') \
 .size() \
-
+.loc[lambda x: x > 1]
 
 df2 = df.dropna()
 df2['contact_mail'].isna().sum()
