@@ -22,7 +22,7 @@ df.groupby('website')['contact_mail'] \
 
 len(df[df['contact_mail'].notna() & df['website'].notna()])
 
-
+df['domain'] = df['contact_mail'].str.split('@').str[-1]
 
 df2 = df.dropna()
 df2['contact_mail'].isna().sum()
