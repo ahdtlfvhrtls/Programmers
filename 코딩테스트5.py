@@ -20,7 +20,7 @@ df.groupby('website')['contact_mail'] \
 .apply(lambda x: x.isna().all()) \
 .sum()
 
-
+len(df[df['contact_mail'].notna() & df['website'].notna()])
 
 df2 = df.dropna()
 df2['contact_mail'].isna().sum()
