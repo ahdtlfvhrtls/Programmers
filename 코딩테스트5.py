@@ -28,5 +28,5 @@ df['domain'] = df['contact_mail'].str.split('@').str[-1]
 df2 = df.dropna()
 # contact_mail 없는 플랫폼 수는?
 df2['contact_mail'].isna().sum()
-website 없는 플랫폼 수는?
+# website 없는 플랫폼 수는?
 df2['website'].isna().sum()
