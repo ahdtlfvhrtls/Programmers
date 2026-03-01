@@ -17,6 +17,7 @@ df[df['contact_mail'].notna()] \
 .size() \
 .loc[lambda x: x > 1]
 
+
 df.groupby('website')['contact_mail'] \
 .apply(lambda x: x.isna().all()) \
 .sum()
