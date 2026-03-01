@@ -11,6 +11,7 @@ grouped = df.groupby('website')['contact_mail'].apply(
 answer = grouped.sum()
 answer
 
+
 df[df['contact_mail'].notna()] \
 .groupby('contact_mail') \
 .size() \
