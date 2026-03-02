@@ -17,7 +17,7 @@ df[df['contact_mail'].notna()] \
 .size() \
 .loc[lambda x: x > 1]
 
-
+#모든 row에서 contact_mail이 NULL인 website 수는?
 df.groupby('website')['contact_mail'] \
 .apply(lambda x: x.isna().all()) \
 .sum()
