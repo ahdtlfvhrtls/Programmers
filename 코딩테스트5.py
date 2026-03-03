@@ -22,7 +22,7 @@ df.groupby('website')['contact_mail'] \
 .apply(lambda x: x.isna().all()) \
 .sum()
 
-contact_mail도 있고 website도 있는 정상 데이터 수는?
+#contact_mail도 있고 website도 있는 정상 데이터 수는?
 len(df[df['contact_mail'].notna() & df['website'].notna()])
 
 df['domain'] = df['contact_mail'].str.split('@').str[-1]
