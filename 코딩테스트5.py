@@ -25,7 +25,7 @@ df.groupby('website')['contact_mail'] \
 # contact_mail도 있고 website도 있는 정상 데이터 수는?
 len(df[df['contact_mail'].notna() & df['website'].notna()])
 
-
+가장 많이 사용된 이메일 도메인은?
 df['domain'] = df['contact_mail'].str.split('@').str[-1]
 
 
