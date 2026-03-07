@@ -30,6 +30,7 @@ df['domain'] = df['contact_mail'].str.split('@').str[-1]
 
 filtered = df[df['website'].isna() & df['contact_mail'].notna()]
 
+
 df2 = df.dropna()
 
 df2['mail_domain'] = df2['contact_mail'].str.split('@').str[-1]
