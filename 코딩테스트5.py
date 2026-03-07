@@ -28,6 +28,7 @@ len(df[df['contact_mail'].notna() & df['website'].notna()])
 # 가장 많이 사용된 이메일 도메인은?
 df['domain'] = df['contact_mail'].str.split('@').str[-1]
 
+
 filtered = df[df['website'].isna() & df['contact_mail'].notna()]
 unique_count = filtered['contact_mail'].nunique()
 
