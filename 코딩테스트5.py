@@ -32,6 +32,7 @@ df['domain'] = df['contact_mail'].str.split('@').str[-1]
 filtered = df[df['website'].isna() & df['contact_mail'].notna()]
 unique_count = filtered['contact_mail'].nunique()
 
+
 df2 = df.dropna()
 
 df2['mail_domain'] = df2['contact_mail'].str.split('@').str[-1]
