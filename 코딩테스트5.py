@@ -34,7 +34,7 @@ unique_count = filtered['contact_mail'].nunique()
 
 missing_mail = df[df['contact_mail'].isna() & df['website'].notna()]
 unique_websites = missing_mail['website'].nunique()
-
+print(unique_websites)
 
 df2 = df.dropna()
 
