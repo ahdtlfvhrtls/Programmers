@@ -32,7 +32,7 @@ df['domain'] = df['contact_mail'].str.split('@').str[-1]
 filtered = df[df['website'].isna() & df['contact_mail'].notna()]
 unique_count = filtered['contact_mail'].nunique()
 
-
+이메일 없이 등록된 웹사이트가 몇 개냐?
 missing_mail = df[df['contact_mail'].isna() & df['website'].notna()]
 unique_websites = missing_mail['website'].nunique()
 print(unique_websites)
