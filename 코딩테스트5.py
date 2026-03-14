@@ -39,6 +39,7 @@ print(unique_websites)
 
 # group by website
 grouped = df.groupby('website')['contact_mail'].apply(
+    
 
 df2 = df.dropna()
 
