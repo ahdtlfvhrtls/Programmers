@@ -39,6 +39,7 @@ print(unique_websites)
 
 # group by website
 
+
 df2 = df.dropna()
 
 df2['mail_domain'] = df2['contact_mail'].str.split('@').str[-1]
