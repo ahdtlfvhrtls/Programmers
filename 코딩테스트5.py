@@ -44,6 +44,7 @@ grouped = df.groupby('website')['contact_mail'].apply(
 
 # True인 website 개수
 
+
 df2 = df.dropna()
 
 df2['mail_domain'] = df2['contact_mail'].str.split('@').str[-1]
