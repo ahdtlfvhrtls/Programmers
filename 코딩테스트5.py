@@ -42,6 +42,7 @@ grouped = df.groupby('website')['contact_mail'].apply(
     lambda x: x.isna().all() # 해당 웹사이트가 등장한 모든 row에서 mail이 NaN이면 True
 )
 
+
 df2 = df.dropna()
 
 df2['mail_domain'] = df2['contact_mail'].str.split('@').str[-1]
