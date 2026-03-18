@@ -9,7 +9,7 @@ grouped = df.groupby('website')['contact_mail'].apply(
 
 # True인 website 개수
 answer = grouped.sum()
-answer
+
 
 # 하나의 이메일이 여러 플랫폼에서 쓰인 경우는 몇 개인가?
 df[df['contact_mail'].notna()] \
