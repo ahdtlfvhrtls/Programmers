@@ -4,7 +4,7 @@ df = pd.read_csv('data2.csv')
 
 # group by website
 grouped = df.groupby('website')['contact_mail'].apply(
-    lambda x: x.isna().all() 
+    lambda x: x.isna().all()
 
 # True인 website 개수
 answer = grouped.sum()
