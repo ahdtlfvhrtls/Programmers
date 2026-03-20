@@ -3,7 +3,7 @@ import pandas as pd
 df = pd.read_csv('data2.csv')
 
 # group by website
-grouped = df.groupby('website')['contact_mail'].apply(
+
     
 
 # True인 website 개수
