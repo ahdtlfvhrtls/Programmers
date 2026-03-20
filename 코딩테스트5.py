@@ -3,7 +3,6 @@ import pandas as pd
 df = pd.read_csv('data2.csv')
 
 # group by website
-
     
 
 # True인 website 개수
