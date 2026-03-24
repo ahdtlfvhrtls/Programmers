@@ -4,6 +4,7 @@ df = pd.read_csv('data2.csv')
 
 # contact_mail이 NULL인 row 개수는?
 
+
 # 하나의 이메일이 여러 플랫폼에서 쓰인 경우는 몇 개인가?
 df[df['contact_mail'].notna()] \
 .groupby('contact_mail') \
