@@ -47,6 +47,7 @@ df2 = df.dropna()
 
 # website 도메인과 이메일 도메인이 같은 경우는 몇 개인가?
 df2['mail_domain'] = df2['contact_mail'].str.split('@').str[-1]
+
 # contact_mail 없는 플랫폼 수는?
 df2['contact_mail'].isna().sum()
 # website 없는 플랫폼 수는?
