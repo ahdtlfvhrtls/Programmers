@@ -8,7 +8,7 @@ df['contact_mail'].isna().sum()
 # website 없는 플랫폼 수는?
 df['website'].isna().sum()
 
-#
+# contact_mail과 website 둘 다 NULL인 row 수는?
 
 # 하나의 이메일이 여러 플랫폼에서 쓰인 경우는 몇 개인가?
 df[df['contact_mail'].notna()] \
